@@ -1,9 +1,9 @@
 import {mayor, menor} from '../main/back-stage.ts';
 
 function recibirNumero() {
-    let x;
+    let x = prompt("Ingrese un número entero:");
     try {
-        x = parseInt(prompt("Ingrese un número entero:"));
+        x = parseInt(x);
     } 
     catch (error) {
         document.write("El numero no es entero, intente nuevamente.");
